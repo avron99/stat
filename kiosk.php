@@ -2,7 +2,7 @@
 	set_time_limit(5184000);
 
 	date_default_timezone_set("Europe/Moscow");
-	$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+	$pdo = new PDO();
 	sleep(5);
 
 	$handle = fopen("4.csv", "a") or die("oops");
@@ -194,7 +194,7 @@
 		{
 			$region = "ЦР";
 		}
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+				$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -267,7 +267,7 @@
 			$region = "ЦР";
 		}
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+				$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -339,7 +339,7 @@
 			$region = "ЦР";
 		}
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -412,7 +412,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -485,7 +485,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -559,7 +559,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -634,7 +634,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -708,7 +708,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
@@ -781,7 +781,7 @@
 		}
 
 
-		$pdo = new PDO('pgsql:host=10.0.3.194;port=5432;dbname=kiosk_srv', 'kiosk_adm', '@gg3n1n');
+		$pdo = new PDO();
 		sleep(5);
 		$stmt = $pdo->prepare("SELECT pings_count, created, kiosk_id
         FROM kiosk_day_log
